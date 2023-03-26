@@ -1,0 +1,181 @@
+@use '../abstract/variables' as v;
+@use '../abstract/mixins' as m;
+
+.db-nav{
+    @include m.d-flex(center, none, none);
+    background: v.$dark;
+    border-bottom: 1px solid v.$dark-alt;
+    height: v.$value7;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    @media (max-width: v.$lg-breakpoint) {
+        width: 100%;
+    }
+    // .nav-navbar{
+    //     @include m.d-flex(center, end, nowrap);
+
+    // .sidebar-brand{
+    //     @include m.d-flex(center, center, wrap);
+    //     background: v.$dark;
+    //     width: 250px;
+    //     border-right: 1px solid v.$dark-alt;
+    //     box-shadow: v.$shadow1;
+    //     // box-shadow: v.$shadow1;
+
+    //     .side-logo{
+    //         @include m.d-flex(center, center, nowrap);
+
+    //         img{
+    //             width: v.$value4;
+    //             margin: v.$value1;
+    //         }
+    //         span{
+    //             font-size: 24px;
+    //             font-weight: 700;
+    //             color: v.$white;
+    //             font-family: v.$sans-serif-alt;
+    //         }
+    //     }
+    
+    // }
+
+    .nav-c{
+        @include m.d-flex(center, space-between, none);
+
+        .navbar-brand{
+            @include m.d-flex(center, center, wrap);
+            position: fixed;
+            width: 250px;
+            top: 0;
+            left: 0;
+            border-right: 1px solid v.$dark-alt;
+            box-shadow: 0px -5px 15px 1px #2c2e31cb;
+            background: v.$dark;
+            height: v.$value7;
+            border-bottom: 1px solid v.$dark-alt;
+            transition: 0.6s all ease;
+            // box-shadow: v.$shadow1;
+    
+            .nav-logo{
+                @include m.d-flex(center, center, nowrap);
+    
+                img{
+                    width: v.$value4;
+                    margin: v.$value1;
+                }
+                span{
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: v.$white;
+                    font-family: v.$sans-serif-alt;
+                }
+            }
+        
+        }
+
+        
+        
+        .navbar-nav{
+            @include m.d-flex(center, none, nowrap);
+
+            @media (max-width: v.$lg-breakpoint) {
+                display: none;
+            }
+    
+            .nav-item{
+                margin: 0 v.$value1;
+    
+                .nav-link{
+                    color: v.$light;
+                    font-weight: 500;
+                }
+            }
+    
+            // .nav-dropdown{
+    
+                // .drop-toggle{
+                //     display: inline-block;
+                //     width: v.$value4;
+                // }
+    
+                // .n-dropdown{
+                //     display: none;
+                // }
+            // } 
+        }
+
+        @media (max-width: v.$lg-breakpoint) {
+
+            .navbar-brand{
+                @include m.d-flex(center, center, wrap);
+                background: v.$dark;
+                height: v.$value7;
+                border-bottom: 1px solid v.$dark-alt;
+                position: static;
+                border: 0;
+                background: none;
+                box-shadow: none;
+        
+                .nav-logo{
+                    @include m.d-flex(center, center, nowrap);
+        
+                    img{
+                        width: v.$value4;
+                        margin: v.$value1;
+                    }
+                    span{
+                        font-size: 24px;
+                        font-weight: 700;
+                        color: v.$white;
+                        font-family: v.$sans-serif-alt;
+                    }
+                }
+            
+            }
+            
+        }
+    }
+    }
+
+    .dashboard{
+
+        &.nav-show{
+
+        .navbar-nav{
+            display: flex;
+            position: fixed;
+            background: v.$dark;
+            width: 100%;
+            top: 70px;
+            left: 0;
+            padding: 8px 20px;
+            border-bottom: 1px solid v.$dark-alt;
+            transition: 0.6s all ease;
+        }
+
+    }
+    }
+
+    @media (min-width: v.$lg-breakpoint) {
+        .dashboard {
+
+            &.sidebar-toggle{
+
+                .navbar-brand {
+                    justify-content: center;
+                    align-items: center;
+                    width: 80px;
+                    transition: 0.6s all ease;
+                    
+                    span{
+                        display: none;
+                    }
+            
+                }
+            }
+        }
+    }

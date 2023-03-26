@@ -1,0 +1,292 @@
+@use '../abstract/variables' as v;
+@use '../abstract/mixins' as m;
+
+.db-sidebar::-webkit-scrollbar {
+    width: 2px;
+    right:2px;
+    position:absolute;
+  }
+   
+//   ::-webkit-scrollbar-track {
+//   }
+   
+.db-sidebar::-webkit-scrollbar-thumb {
+    background:v.$dark-alt;
+    border-radius:10px;
+    height: 50px;
+  }
+
+
+
+.db-sidebar{
+    width: v.$value10+ v.$value10 + v.$value5;
+    border-right: 1px solid v.$dark-alt;
+    box-shadow: v.$shadow1;
+    position: fixed;
+    left: 0;
+    top: 70px;
+    height: 100vh;
+    background: v.$dark;
+    transition: 0.6s all ease;
+    overflow-y: auto;
+
+    .sidebar-content{
+        // padding-left: v.$value4;
+
+        .sidebar-item{
+            
+            .sidebar-link{
+                display: block;
+                padding: v.$value1+5px 0;
+                position: relative;
+                left: 0;
+                border-left: 5px solid v.$dark;
+                color: v.$white;
+                font-size: v.$fs-6;
+                font-weight: 500;
+                border-radius: 2px 20px;
+                background: v.$dark;
+                transition: 0.5s all ease;
+
+                span{
+                    position: absolute;
+                    left: 70px;
+                    width: 170px;
+                }
+
+                &:hover{
+                    border-left: 5px solid v.$white;
+                    background: v.$primary;
+                }
+
+                &.active{
+                    border-left: 5px solid v.$white;
+                    background: v.$primary;
+                }
+
+
+            }
+
+            &.side-dropdown{
+                position: relative;
+
+                a{
+                    display: block;
+                    padding-bottom: 15px;
+
+                    span .dropdown{
+                        position: absolute;
+                        right: 0;
+                        padding-top: 5px;
+                        transition: 0.3s ease;
+
+                        &.rotate{
+                            transform: rotate(90deg);
+                        }
+                    }
+                }
+
+                .side-drop{
+                    // padding: v.$value1+5px 0;
+                    background: v.$dark-alt;
+                    border-radius: 2px 20px;
+                    display: none;
+                    
+                    li{
+                        list-style: circle;
+                        padding: 10px 0 5px 0;
+                        padding-left: 70px;
+                        color: v.$light;
+                        border-radius: 2px 20px;
+                        transition: 0.6s all ease;
+                        border-left: 5px solid v.$dark-alt;
+                        
+                        &:hover{
+                            background: #183561cb;
+                            border-left: 5px solid v.$light;
+                            }
+
+                        &.active{
+                            background: #183561cb;
+                            border-left: 5px solid v.$light;
+                            }
+
+                        .sdrop-item{
+                            display: block;
+                            color: v.$white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: v.$lg-breakpoint) {
+       
+    .dashboard{
+
+        &.sidebar-toggle{
+        
+            .db-sidebar{
+                position: fixed;
+                width: 80px;
+                left: 0;
+                top: 70px;
+                overflow: hidden;
+                transition: 0.6s all ease;
+        
+                // .sidebar-content{
+                    // padding-left: 30px;
+                // }
+            
+                .sidebar-item {
+    
+                    span{
+                        // display: none;
+                        position: absolute;
+                        left: -200px;
+                        z-index: -5;
+                        transition: 0.6s all ease;
+                    }
+                }
+                .side-drop{
+                    // display: none;
+                    position: absolute;
+                    left: -200px;
+                    z-index: -5;
+                    transition: 0.6s all ease;
+                }
+            }
+
+            // .db-sidebar.mouse-toggle{
+            //     width: 250px;
+            //     position: absolute;
+            //     left: 0;
+            //     transition: 0.6s all ease;
+
+            //     .sidebar-brand{
+            //         @include m.d-flex(center, center, wrap);
+            //         background: v.$dark;
+            //         height: v.$value7;
+            //         border-bottom: 1px solid v.$dark-alt;
+            //         // box-shadow: v.$shadow1;
+            
+            //         .side-logo{
+            //             @include m.d-flex(center, center, nowrap);
+            
+            //             img{
+            //                 width: v.$value4;
+            //                 margin: v.$value1;
+            //             }
+            //             span{
+            //                 font-size: 24px;
+            //                 font-weight: 700;
+            //                 color: v.$white;
+            //                 font-family: v.$sans-serif-alt;
+            //             }
+            //         }
+                
+            //     }
+        
+            //     .sidebar-content{
+            //         padding-left: v.$value4;
+            
+            //         .sidebar-item{
+            //             margin: v.$value2 0;
+            
+            //             .sidebar-link{
+            //                 color: v.$white;
+            //                 font-size: v.$fs-6;
+            //                 font-weight: 500;
+            //             }
+            
+            //             &.side-dropdown{
+            
+            //                 a{
+            //                     padding-bottom: 15px;
+            //                 }
+            
+            //                 .side-drop{
+            //                     padding-left: 35px;
+                                
+            //                     li{
+            //                         list-style: circle;
+            //                         color: v.$light;
+            //                         padding: 6px 0;
+            
+            //                         .sdrop-item{
+            //                             color: v.$white;
+            //                         }
+            //                     }
+            //                 }
+            //             }
+            //         }
+            //     }
+                
+            // }
+        
+            .db-body{
+                width: calc(100% - 80px);
+                left: 80px;
+                position: relative;
+                transition: 0.6s all ease;
+            }
+        }
+    }
+}
+
+@media (max-width: v.$lg-breakpoint) {
+    
+    .dashboard{
+
+        .db-sidebar{
+            position: relative;
+            left: -300px;
+            transition: 0.6s all ease;
+        }
+        
+        .db-body{
+            position: absolute;
+            width: 100%;
+            left: 0;
+            transition: 0.6s all ease;
+        } 
+
+        &.sidebar-toggle{
+            .db-sidebar{
+                position: fixed;
+                left: 0;
+                z-index: 1;
+                transition: 0.6s all ease;
+            }
+        }
+        
+    }
+}
+
+.scrollbox { 
+    overflow:auto;
+    visibility:hidden;
+    padding:15px 10px 15px 0;
+ }
+ 
+ .scrollbox-inner,
+ .scrollbox:hover {
+    visibility: visible;
+ }
+ 
+
+//  .db-sidebar { 
+//     overflow:auto;
+//     visibility: hidden;
+//     padding:15px 10px 15px 0;
+//     border-right: 1px solid v.$dark-alt;
+//     transition: 0.6s all ease;
+//  }
+ 
+//  .sidebar-content,
+//  .db-sidebar:hover {
+//     visibility: visible;
+//  }

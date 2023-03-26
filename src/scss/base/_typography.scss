@@ -1,0 +1,91 @@
+@use '../abstract/variables' as v;
+
+.text-center{
+    text-align: center;
+}
+
+.text-end{
+    text-align: end;
+}
+
+@media (min-width: v.$lg-breakpoint) and  (min-width: v.$md-breakpoint) {
+    .text-md-end{
+        text-align: end;
+    }
+}
+
+@media (min-width: v.$lg-breakpoint) {
+    .text-lg-end{
+        text-align: end;
+    }
+}
+
+
+.text-start{
+    text-align: start;
+}
+
+.fs-1{
+font-size: v.$fs-1;
+}
+
+.fs-2{
+font-size: v.$fs-2;
+}
+
+.fs-3{
+font-size: v.$fs-3;
+}
+
+.fs-4{
+font-size: v.$fs-4;
+}
+
+.fs-5{
+font-size: v.$fs-5;
+}
+
+.fs-6{
+font-size: v.$fs-6;
+}
+
+.fs-7{
+font-size: v.$fs-7;
+}
+
+.fs-8{
+font-size: 12px;
+}
+
+// .fs-9{
+// font-size: 10px;
+// }
+
+.badge{
+    background: #25272b75;
+    border-radius: 10px;
+    padding: 0 8px 2px 8px;
+    font-size: 14px;
+    font-weight: 300;
+    margin-right: 8px;
+
+    &.text-bg-primary{
+        background: v.$primary; 
+    }
+    &.text-bg-success{
+        background: v.$success; 
+    }
+    &.text-bg-secondary{
+        background: v.$secondary; 
+    }
+    &.text-bg-warning{
+        background: v.$warning; 
+    }
+    &.text-bg-danger{
+        background: v.$danger; 
+    }
+    &.text-bg-info{
+        background: v.$info; 
+    }
+
+}

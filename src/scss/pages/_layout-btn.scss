@@ -1,0 +1,8 @@
+@use '../abstract/variables' as v;
+@use '../abstract/mixins' as m;
+
+.buttons-p{
+    button{
+        margin: 5px !important;
+    }
+}

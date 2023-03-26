@@ -1,0 +1,76 @@
+@use '../abstract/variables' as v;
+@use '../abstract/mixins' as m;
+
+.dropdown{
+    @include m.dropdown;
+
+    .drop-toggle{
+        @include m.dd-button;
+        transition: 0.5s all ease;
+        display: inline-block;
+        width: v.$value4;
+    }
+
+    .n-dropdown{
+        position: absolute;
+        top: 120%;
+        left: -85px;
+        border: 1px solid v.$dark-alt;
+        border-radius: 4px;
+        padding: 0;
+        margin: 2px 0 0 0;
+        box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+        background-color: v.$dark;
+        display: none;
+        z-index: 2;
+        // box-shadow: 0px 0px 5px 1px rgb(60 60 60);
+
+        &.active-dropdown{
+            display: block;
+        }
+
+        // &::after{
+        //     content: " ";
+        //     background: v.$dark;
+        //     height: 16px;
+        //     width: 16px;
+        //     transform: rotate(45deg);
+        //     position: absolute;
+        //     top: -9px;
+        //     right: 14px;
+        //     border: 1px solid v.$dark-alt;
+        //     z-index: -1;
+        // }
+
+        li{
+            padding: 10px 20px;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: 0.5s all ease;
+            position: relative;
+            z-index: 0;
+
+            &:hover{
+                background: rgb(67, 68, 71);
+            }
+
+            a{
+                color: v.$white;
+            }
+        }
+
+        hr{
+            border: 1px solid rgb(31 34 41);
+        }
+    }
+}
+
+// .dashboard{
+
+//     &.show{
+
+//         .n-dropdown{
+//             display: block;
+//         }
+//     }
+// }

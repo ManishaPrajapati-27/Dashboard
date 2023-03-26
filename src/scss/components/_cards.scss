@@ -1,0 +1,15 @@
+@use '../abstract/mixins' as m;
+@use '../abstract/variables' as v;
+.card{
+    @include m.card-style;
+
+    .card-title{
+        @include m.card-title;
+    }
+    
+    .card-body{
+        padding: v.$value1+5;
+    }
+
+    
+}

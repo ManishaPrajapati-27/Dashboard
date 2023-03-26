@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms-Layout</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <!-- Popup Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./scss/main.scss">
+</head>
+
+<body>
+    <!-- Page Loader -->
+    <div class="loader">
+        <div class="outter">
+            <div class="mid">
+            </div>
+        </div>
+    </div>
+
+    <div class="dashboard">
+        <aside class="db-sidebar">
+            <ul class="sidebar-content">
+                <li class="sidebar-item"><a class="sidebar-link ps-2" href="./"><i class="fal pe-1 fa-home-alt"></i>
+                        <span>Dashboard</span></a>
+                </li>
+                <li class="sidebar-item"><a class="sidebar-link ps-2" href="./time.html"><i
+                            class="fal pe-1 fa-hourglass-end"></i>
+                        <span>Time</span></a>
+                </li>
+                <li class="sidebar-item side-dropdown">
+                    <a href="#" class="sidedrop-toggle active sidebar-link ps-2"> <i
+                            class="fal pe-1 fa-project-diagram"></i>
+                        <span>Layouts <i class="fas fa-angle-right dropdown me-1"></i></span></a>
+                    <ul class="side-drop">
+                        <li><a class="sdrop-item" href="./layout-form.html">Forms</a></li>
+                        <li><a class="sdrop-item" href="./layout-button.html">Buttons</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-item"><a class="sidebar-link ps-2" href="./chart.html"><i
+                            class="fal pe-1 fa-chart-pie"></i>
+                        <span>Charts</span></a>
+                </li>
+
+                <li class="sidebar-item side-dropdown">
+                    <a href="#" class="sidedrop-toggle sidebar-link ps-2"><i class="fal pe-1 fa-chart-line"></i>
+                        <span>Page <i class="fas fa-angle-right dropdown me-1"></i></span></a>
+                    <ul class="side-drop">
+                        <li><a class="sdrop-item" href="./profile-page.html">Profile</a></li>
+                        <li><a class="sdrop-item" href="./gallery-page.html">Gallery</a></li>
+                        <li><a class="sdrop-item" href="./map-page.html">Maps</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-item"><a class="sidebar-link ps-2" href="./table.html"><i
+                            class="fal pe-1 fa-table"></i>
+                        <span>Table</span></a></li>
+
+                <li class="sidebar-item side-dropdown">
+                    <a href="#" class="sidedrop-toggle sidebar-link ps-2"> <i class="fal fa-atom-alt pe-1"></i>
+                        <span>Authentication <i class="fas fa-angle-right dropdown me-1"></i></span></a>
+                    <ul class="side-drop">
+                        <li><a class="sdrop-item" href="./login.html">Login</a></li>
+                        <li><a class="sdrop-item" href="./register.html">Register</a></li>
+                        <li><a class="sdrop-item" href="./forgot.html">Forgot Password</a></li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-item side-dropdown">
+                    <a href="#" class="sidedrop-toggle sidebar-link ps-2"><i class="fal pe-1 fa-user-friends"></i>
+                        <span>Team <i class="fas fa-angle-right dropdown me-1"></i></span></a>
+                    <ul class="side-drop">
+                        <li><a class="sdrop-item" href="./team-employee.html">Employees</a></li>
+                        <li><a class="sdrop-item" href="./team-user.html">Users</a></li>
+                    </ul>
+                </li>
+
+
+
+            </ul>
+        </aside>
+
+        <div class="db-body">
+            <nav class="db-nav">
+                <!-- <div class="sidebar-brand">
+                    <a href="./" class="side-logo"><img src="./images/logo3.png" alt=""><span>Dashman</span></a>
+                </div> -->
+                <div class="container-fluid">
+                    <div class="nav-c">
+                        <button class="toggle"><img src="./images/toggle-btn.png" alt=""></button>
+                        <div class="navbar-brand mx-auto">
+                            <a href="./" class="nav-logo"><img src="./images/logo3.png" alt=""><span>Dashman</span></a>
+                        </div>
+                        <button class="buttons nav-toggle"><i class="fas fa-ellipsis-v"></i></button>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a href="#" class="nav-link" id="theme"><i
+                                        class="far fa-search"></i></a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-comment-alt"></i></a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-user-headset"></i></a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-bell"></i></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-cog"></i></a></li>
+                            <li class="nav-item dropdown">
+                                <div class="drop-toggle nav-link"><img src="./images/girl.png" alt="Profile"></div>
+                                <!-- <input type="checkbox" class="dd-input" id="test"> -->
+                                <ul class="n-dropdown">
+                                    <!-- <h4>Manisha</h4>
+                                    <h6>Adiministrator</h6> -->
+                                    <li><a href="#" class="drop-item">
+                                            <h4>Manisha</h4>
+                                            <h6>Administrator</h6>
+                                        </a></li>
+                                    <hr>
+                                    <li><a href="#" class="drop-item"><i class="far fa-user"></i> Profile</a></li>
+                                    <hr>
+                                    <li><a href="#" class="drop-item"><i class="far fa-cogs"></i> Setting</a></li>
+                                    <hr>
+                                    <li><a href="#" class="drop-item"><i class="far fa-sign-out"></i> Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </nav>
+            <div class="db-content section">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-title">
+                                    Form One
+                                </div>
+                                <div class="card-body mx-1">
+                                    <form action="" class="form my-1">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="form-input">
+                                                    <input type="text" class="form-control" placeholder="First Name"
+                                                        id="name">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="form-input">
+                                                    <input type="text" class="form-control" placeholder="Last Name"
+                                                        id="name">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="form-input">
+                                                    <input type="email" class="form-control" placeholder="Email"
+                                                        id="email">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="form-input">
+                                                    <input type="password" class="form-control" placeholder="Password"
+                                                        id="password">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="form-input">
+                                                    <textarea type="text" class="form-control"
+                                                        placeholder="Write Your Address" id="address"
+                                                        rows="2"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="form-input">
+                                                    <textarea type="text" class="form-control"
+                                                        placeholder="Write Your Address2" id="address"
+                                                        rows="2"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="form-input">
+                                                    <input type="text" class="form-control" placeholder="city"
+                                                        id="city">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="form-input">
+                                                    <select name="pets" id="state" class="form-control">
+                                                        <option value="">Select Your State</option>
+                                                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                                        <option value="Assam">Assam</option>
+                                                        <option value="Bihar">Bihar</option>
+                                                        <option value="Goa">Goa</option>
+                                                        <option value="Gujarat">Gujarat</option>
+                                                        <option value="Maharashtra">Maharashtra</option>
+                                                        <option value="Punjab">Punjab</option>
+                                                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                                        <option value="West Bengal">West Bengal</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="checkbox" id="checkbox" class="form-check">
+                                                <label for="check">I agree with terms and conditions</label>
+                                            </div>
+                                            <div class="div col-12">
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="card-title">
+                                    Form Two
+                                </div>
+                                <div class="card-body mx-1">
+                                    <form action="" class="form my-1">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-input row">
+                                                    <div class="col-4">
+                                                        <label for="name">First Name</label>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <input type="text" placeholder="Enter Your First Name"
+                                                            class="form-control" id="name">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-input row">
+                                                    <div class="col-4">
+                                                        <label for="email">Email</label>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <input type="email" class="form-control"
+                                                            placeholder="Enter Your Last Name" id="email">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-input row">
+                                                    <div class="col-4">
+                                                        <label for="password">Password</label>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <input type="password" placeholder="Enter Password"
+                                                            class="form-control" id="password">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="checkbox" id="checkbox" class="form-check">
+                                                <label for="check">I agree with terms and conditions</label>
+                                            </div>
+                                            <div class="div col-12">
+                                                <button type="submit" class="btn btn-primary w-100">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="card-title">
+                                    Form Three
+                                </div>
+                                <div class="card-body mx-1">
+                                    <form action="" class="form my-1">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-input">
+                                                    <label for="name">Username</label>
+                                                    <input type="text" class="form-control" id="name">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-input">
+                                                    <label for="password">Password</label>
+                                                    <input type="password" class="form-control" id="password">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="checkbox" id="checkbox" class="form-check">
+                                                <label for="check">I agree with terms and conditions</label>
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="submit" class="btn btn-primary w-100">Login</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-title">
+                                    Form Four Inputs In Horizontal Alignment
+                                </div>
+                                <div class="card-body mx-1">
+                                    <form action="" class="form my-1">
+                                        <div class="row">
+                                            <div class="col-lg-5 col-md-5 col-sm-12">
+                                                <div class="form-input">
+                                                    <!-- <label for="name">Username</label> -->
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Enter Your Username" id="name">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-5 col-md-5 col-sm-12">
+                                                <div class="form-input">
+                                                    <!-- <label for="password">Password</label> -->
+                                                    <input type="password" placeholder="Enter Your Password"
+                                                        class="form-control" id="password">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12">
+                                                <button type="submit" class="btn btn-primary w-100">Login</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="card-title">
+                                    Form Five Inputs In Vertical
+                                </div>
+                                <div class="card-body mx-1">
+                                    <form action="" class="form my-1">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-input">
+                                                    <!-- <label for="name">Username</label> -->
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Enter Your Username" id="name">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-input">
+                                                    <!-- <label for="password">Password</label> -->
+                                                    <input type="password" placeholder="Enter Your Password"
+                                                        class="form-control" id="password">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="submit" class="btn btn-primary">Login</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p>Copyright © 2023 <a href="#">Manisha</a>. Designend By <a href="#">Manisha</a> | All rights reserved.
+                </p>
+            </footer>
+        </div>
+
+    </div>
+
+    <!-- Back To Bottom Button -->
+    <button id="button" class="btn btn-primary"><i class="far fa-chevron-up"></i></button>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+    <!-- Popup Video -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+
+    <!-- Chart JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <!-- Scripts -->
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

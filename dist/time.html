@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.8003f84c.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+    <!-- Popup Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/main.77bb5cfd.css">
+</head>
+
+<body>
+    <!-- Page Loader -->
+    <div class="loader">
+        <div class="outter">
+            <div class="mid">
+            </div>
+        </div>
+    </div>
+
+    <div class="dashboard">
+        <aside class="db-sidebar">
+            <ul class="sidebar-content">
+                <li class="sidebar-item"><a class="sidebar-link ps-2" href="./"><i class="fal pe-1 fa-home-alt"></i>
+                        <span>Dashboard</span></a>
+                </li>
+                <li class="sidebar-item"><a class="sidebar-link active ps-2" href="/time.html"><i class="fal pe-1 fa-hourglass-end"></i>
+                        <span>Time</span></a>
+                </li>
+                <li class="sidebar-item side-dropdown">
+                    <a href="#" class="sidedrop-toggle sidebar-link ps-2"> <i class="fal pe-1 fa-project-diagram"></i>
+                        <span>Layouts <i class="fas fa-angle-right dropdown me-1"></i></span></a>
+                    <ul class="side-drop">
+                        <li><a class="sdrop-item" href="/layout-form.html">Forms</a></li>
+                        <li><a class="sdrop-item" href="/layout-button.html">Buttons</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-item"><a class="sidebar-link ps-2" href="/chart.html"><i class="fal pe-1 fa-chart-pie"></i>
+                        <span>Charts</span></a>
+                </li>
+
+                <li class="sidebar-item side-dropdown">
+                    <a href="#" class="sidedrop-toggle sidebar-link ps-2"><i class="fal pe-1 fa-chart-line"></i>
+                        <span>Page <i class="fas fa-angle-right dropdown me-1"></i></span></a>
+                    <ul class="side-drop">
+                        <li><a class="sdrop-item" href="/profile-page.html">Profile</a></li>
+                        <li><a class="sdrop-item" href="/gallery-page.html">Gallery</a></li>
+                        <li><a class="sdrop-item" href="/map-page.html">Maps</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-item"><a class="sidebar-link ps-2" href="/table.html"><i class="fal pe-1 fa-table"></i>
+                        <span>Table</span></a></li>
+
+                <li class="sidebar-item side-dropdown">
+                    <a href="#" class="sidedrop-toggle sidebar-link ps-2"> <i class="fal fa-atom-alt pe-1"></i>
+                        <span>Authentication <i class="fas fa-angle-right dropdown me-1"></i></span></a>
+                    <ul class="side-drop">
+                        <li><a class="sdrop-item" href="/login.html">Login</a></li>
+                        <li><a class="sdrop-item" href="/register.html">Register</a></li>
+                        <li><a class="sdrop-item" href="/forgot.html">Forgot Password</a></li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-item side-dropdown">
+                    <a href="#" class="sidedrop-toggle sidebar-link ps-2"><i class="fal pe-1 fa-user-friends"></i>
+                        <span>Team <i class="fas fa-angle-right dropdown me-1"></i></span></a>
+                    <ul class="side-drop">
+                        <li><a class="sdrop-item" href="/team-employee.html">Employees</a></li>
+                        <li><a class="sdrop-item" href="/team-user.html">Users</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </aside>
+
+        <div class="db-body">
+            <nav class="db-nav">
+                <!-- <div class="sidebar-brand">
+                    <a href="./" class="side-logo"><img src="./images/logo3.png" alt=""><span>Dashman</span></a>
+                </div> -->
+                <div class="container-fluid">
+                    <div class="nav-c">
+                        <button class="toggle"><img src="/toggle-btn.c52c55eb.png" alt=""></button>
+                        <div class="navbar-brand mx-auto">
+                            <a href="./" class="nav-logo"><img src="/logo3.83f7bc57.png" alt=""><span>Dashman</span></a>
+                        </div>
+                        <button class="buttons nav-toggle"><i class="fas fa-ellipsis-v"></i></button>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a href="#" class="nav-link" id="theme"><i class="far fa-search"></i></a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-comment-alt"></i></a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-user-headset"></i></a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-bell"></i></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-cog"></i></a></li>
+                            <li class="nav-item dropdown">
+                                <div class="drop-toggle nav-link"><img src="/girl.a9774c98.png" alt="Profile"></div>
+                                <!-- <input type="checkbox" class="dd-input" id="test"> -->
+                                <ul class="n-dropdown">
+                                    <!-- <h4>Manisha</h4>
+                                    <h6>Adiministrator</h6> -->
+                                    <li><a href="#" class="drop-item">
+                                            <h4>Manisha</h4>
+                                            <h6>Administrator</h6>
+                                        </a></li>
+                                    <hr>
+                                    <li><a href="#" class="drop-item"><i class="far fa-user"></i> Profile</a></li>
+                                    <hr>
+                                    <li><a href="#" class="drop-item"><i class="far fa-cogs"></i> Setting</a></li>
+                                    <hr>
+                                    <li><a href="#" class="drop-item"><i class="far fa-sign-out"></i> Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </nav>
+            <div class="db-content section">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="time-row">
+                                <div class="card">
+                                    <div class="card-title">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                Timeline
+                                                <span class="time text-end ms-1 fs-8 text-muted">Sent You an mail</span>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12 text-md-end text-lg-end">
+                                                <span class="fs-8 ms-auto text-muted"><i class="fal fa-calendar-alt text-success"></i> 26 -03-2023</span>
+                                                <span class="fs-8 ms-auto text-muted"><i class="fal fa-clock text-danger"></i>
+                                                    01:00am</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="fs-7 mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Facilis
+                                            deleniti dignissimos consequuntur quisquam aspernatur rerum tempora aliquid
+                                            deserunt delectus quidem.</p>
+                                        <div>
+                                            <a href="#" class="btn btn-primary btn-sm me-1">Read More</a>
+                                            <a href="#" class="btn btn-danger btn-sm me-1">Delete</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="time-row">
+                                <div class="card">
+                                    <div class="card-title">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                Arvind Phogat
+                                                <span class="time text-end ms-1 fs-8 text-muted">Accept your friend
+                                                    request</span>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12 text-md-end text-lg-end">
+                                                <span class="fs-8 ms-auto text-muted me-1"><i class="fal fa-calendar-alt text-success"></i> 26-03-2023</span>
+                                                <span class="fs-8 ms-auto text-muted"><i class="fal fa-clock text-danger"></i>
+                                                    01:30am</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="time-row">
+                                <div class="card">
+                                    <div class="card-title">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                Sandeep Gupta
+                                                <span class="time text-end ms-1 fs-8 text-muted">Comment your
+                                                    post</span>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12 text-md-end text-lg-end">
+                                                <span class="fs-8 ms-auto text-muted me-1"><i class="fal fa-calendar-alt text-success"></i> 26-03-2023</span>
+                                                <span class="fs-8 ms-auto text-muted"><i class="fal fa-clock text-danger"></i>
+                                                    09:40am</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="mb-1">Dolor, sit amet consectetur adipisicing elit. Id quisquam
+                                            consectetur provident, labore quod iure.</p>
+
+                                        <a href="#" class="btn btn-warning btn-sm">View More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="time-row">
+                                <div class="card">
+                                    <div class="card-title">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                Akankshi Gupta
+                                                <span class="time text-end ms-1 fs-8 text-muted">Upload New
+                                                    Photos</span>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12 text-md-end text-lg-end">
+                                                <span class="fs-8 ms-auto text-muted me-1"><i class="fal fa-calendar-alt text-success"></i> 27-03-2023</span>
+                                                <span class="fs-8 ms-auto text-muted"><i class="fal fa-clock text-danger"></i>
+                                                    11:40am</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-md-4 col-sm-12">
+                                                <a href="#"><img src="/3.16ecb88f.jpg" alt=""></a>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-sm-12">
+                                                <a href="#"><img src="/6.094040d3.jpg" alt=""></a>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-sm-12">
+                                                <a href="#"><img src="/5.2c61b7bd.jpg" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <!-- <div class="time-row"> -->
+                            <div class="card">
+                                <div class="card-title">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            Manisha Prajapti
+                                            <span class="time text-end ms-1 fs-8 text-muted">Shared Location</span>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 text-md-end text-lg-end">
+                                            <span class="fs-8 ms-auto text-muted me-1"><i class="fal fa-calendar-alt text-success"></i> 27-03-2023</span>
+                                            <span class="fs-8 ms-auto text-muted"><i class="fal fa-clock text-danger"></i>
+                                                04:00pm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="map mb-1">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241316.6433226075!2d72.74109764718445!3d19.082522324027448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1679406111247!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+
+                                    <a href="#" class="btn btn-success btn-sm">See Comments</a>
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                    <!-- <div class="row time-row">
+                        .
+                    </div> -->
+                </div>
+            </div>
+            <footer>
+                <p>Copyright © 2023 <a href="#">Manisha</a>. Designend By <a href="#">Manisha</a> | All rights reserved.
+                </p>
+            </footer>
+        </div>
+
+    </div>
+
+    <!-- Back To Bottom Button -->
+    <button id="button" class="btn btn-primary"><i class="far fa-chevron-up"></i></button>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+    <!-- Popup Video -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+
+    <!-- Chart JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <!-- Scripts -->
+    <script src="/js.00a46daa.js"></script>
+</body>
+
+</html>

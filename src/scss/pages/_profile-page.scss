@@ -1,0 +1,96 @@
+@use '../abstract/variables' as v;
+@use '../abstract/mixins' as m;
+
+.profile-c{
+    .img-div{
+        position: relative;
+        .bg{
+            height: 250px;
+        }
+
+        .profile{
+            width: 100px;
+            position: absolute;
+            bottom: -45px;
+            left: 20px;
+            img{
+                border-radius: 10px;
+                outline: 4px solid v.$primary-alt;
+            }
+        }
+    }
+
+    .info{
+        // padding-left: 20px;
+
+        h2{
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        h4{
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 6px;
+        }
+        h5{
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 6px;
+        }
+    }
+
+    .c-info{
+        a{
+            font-size: 16px;
+        }
+    }
+}
+
+.information{
+
+    .card-body{
+
+        p{
+            font-size: v.$fs-7;
+        }
+
+        .info-p{
+            border-top: 1px solid #1c1f25;
+
+            h3{
+                font-weight: 500;
+                font-size: v.$fs-4;
+                font-family: v.$sans-serif-alt;
+                margin: 12px 0;
+            }
+        }
+
+        .c-info a{
+            color: v.$white;
+            font-size: v.$fs-7;
+
+            span{
+                display: inline-block;
+                text-align: center;
+                height: 40px;
+                width: 40px;
+                line-height: 40px;
+                background: transparent;
+                border-radius: 50%;
+                border: 1px solid v.$light;
+            }
+        }
+    }
+}
+
+// Gallery Page
+
+.popup-gallery{
+    a{
+        img{
+            border-radius: 6px;
+            border: 1px solid v.$secondary-alt;
+        }
+    }
+}

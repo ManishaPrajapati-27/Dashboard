@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.8003f84c.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+    <!-- Popup Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/main.77bb5cfd.css">
+<script src="/main.77bb5cfd.js"></script></head>
+
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="outter">
+            <div class="mid">
+            </div>
+        </div>
+    </div>
+    <div class="dashboard">
+        <aside class="db-sidebar">
+            <ul class="sidebar-content">
+                <li class="sidebar-item"><a class="sidebar-link active ps-2" href="./"><i class="fal pe-1 fa-home-alt"></i>
+                        <span>Dashboard</span></a>
+                </li>
+                <li class="sidebar-item"><a class="sidebar-link ps-2" href="/time.html"><i class="fal pe-1 fa-hourglass-end"></i>
+                        <span>Time</span></a>
+                </li>
+                <li class="sidebar-item side-dropdown">
+                    <a href="#" class="sidedrop-toggle sidebar-link ps-2"> <i class="fal pe-1 fa-project-diagram"></i>
+                        <span>Layouts <i class="fas fa-angle-right dropdown me-1"></i></span></a>
+                    <ul class="side-drop">
+                        <li><a class="sdrop-item" href="/layout-form.html">Forms</a></li>
+                        <li><a class="sdrop-item" href="/layout-button.html">Buttons</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-item"><a class="sidebar-link ps-2" href="/chart.html"><i class="fal pe-1 fa-chart-pie"></i>
+                        <span>Charts</span></a>
+                </li>
+
+                <li class="sidebar-item side-dropdown">
+                    <a href="#" class="sidedrop-toggle sidebar-link ps-2"><i class="fal pe-1 fa-chart-line"></i>
+                        <span>Page <i class="fas fa-angle-right dropdown me-1"></i></span></a>
+                    <ul class="side-drop">
+                        <li><a class="sdrop-item" href="/profile-page.html">Profile</a></li>
+                        <li><a class="sdrop-item" href="/gallery-page.html">Gallery</a></li>
+                        <li><a class="sdrop-item" href="/map-page.html">Maps</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-item"><a class="sidebar-link ps-2" href="/table.html"><i class="fal pe-1 fa-table"></i>
+                        <span>Table</span></a></li>
+
+                <li class="sidebar-item side-dropdown">
+                    <a href="#" class="sidedrop-toggle sidebar-link ps-2"> <i class="fal fa-atom-alt pe-1"></i>
+                        <span>Authentication <i class="fas fa-angle-right dropdown me-1"></i></span></a>
+                    <ul class="side-drop">
+                        <li><a class="sdrop-item" href="/login.html">Login</a></li>
+                        <li><a class="sdrop-item" href="/register.html">Register</a></li>
+                        <li><a class="sdrop-item" href="/forgot.html">Forgot Password</a></li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-item side-dropdown">
+                    <a href="#" class="sidedrop-toggle sidebar-link ps-2"><i class="fal pe-1 fa-user-friends"></i>
+                        <span>Team <i class="fas fa-angle-right dropdown me-1"></i></span></a>
+                    <ul class="side-drop">
+                        <li><a class="sdrop-item" href="/team-employee.html">Employees</a></li>
+                        <li><a class="sdrop-item" href="/team-user.html">Users</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </aside>
+
+        <div class="db-body">
+            <nav class="db-nav">
+                <!-- <div class="sidebar-brand">
+                    <a href="./" class="side-logo"><img src="./images/logo3.png" alt=""><span>Dashman</span></a>
+                </div> -->
+                <div class="container-fluid">
+                    <div class="nav-c">
+                        <button class="toggle"><img src="/toggle-btn.c52c55eb.png" alt=""></button>
+                        <div class="navbar-brand mx-auto">
+                            <a href="./" class="nav-logo"><img src="/logo3.83f7bc57.png" alt=""><span>Dashman</span></a>
+                        </div>
+                        <button class="buttons nav-toggle"><i class="fas fa-ellipsis-v"></i></button>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a href="#" class="nav-link" id="theme"><i class="far fa-search"></i></a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-comment-alt"></i></a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-user-headset"></i></a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-bell"></i></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-cog"></i></a></li>
+                            <li class="nav-item dropdown">
+                                <div class="drop-toggle nav-link"><img src="/girl.a9774c98.png" alt="Profile"></div>
+                                <!-- <input type="checkbox" class="dd-input" id="test"> -->
+                                <ul class="n-dropdown">
+                                    <!-- <h4>Manisha</h4>
+                                    <h6>Adiministrator</h6> -->
+                                    <li><a href="#" class="drop-item">
+                                            <h4>Manisha</h4>
+                                            <h6>Administrator</h6>
+                                        </a></li>
+                                    <hr>
+                                    <li><a href="#" class="drop-item"><i class="far fa-user"></i> Profile</a></li>
+                                    <hr>
+                                    <li><a href="#" class="drop-item"><i class="far fa-cogs"></i> Setting</a></li>
+                                    <hr>
+                                    <li><a href="#" class="drop-item"><i class="far fa-sign-out"></i> Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </nav>
+            <div class="db-content section">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <!-- Daily Details -->
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="card daily-d">
+                                        <div class="card-body">
+                                            <!-- <div class="row"> -->
+                                            <div>
+                                                <h5 class="card-sub-head fs-5 text-white">Daily Revenue</h5>
+                                                <h2 class="card-head fs-3 text-white"><i class="far fa-rupee-sign"></i>
+                                                    2,345</h2>
+                                                <div class="text-muted">
+                                                    <i class="fas text-success fa-signal"></i>
+                                                    <span class="fw-bold">7.05%</span>
+                                                    <span>(30 days)</span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="icons war"><i class="far fa-pencil"></i></div>
+                                            </div>
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 pt-0">
+                                    <div class="card daily-d">
+                                        <div class="card-body">
+                                            <div>
+                                                <h5 class="card-sub-head fs-5 text-white">Daily Users</h5>
+                                                <h2 class="card-head fs-3 text-white">1,235</h2>
+                                                <div class="text-muted">
+                                                    <i class="fas text-success fa-signal"></i>
+                                                    <span class="fw-bold">7.12%</span>
+                                                    <span>(30 days)</span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="icons pri"><i class="far fa-user"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="card daily-d">
+                                        <div class="card-body">
+                                            <div>
+                                                <h5 class="card-sub-head fs-5 text-white">Daily Sales</h5>
+                                                <h2 class="card-head fs-3 text-white">1,246</h2>
+                                                <div class="text-muted">
+                                                    <i class="fas text-success fa-signal"></i>
+                                                    <span class="fw-bold">8.08%</span>
+                                                    <span>(30 days)</span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="icons suc"><i class="far fa-signal-alt-3"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="card daily-d">
+                                        <div class="card-body">
+                                            <div>
+                                                <h5 class="card-sub-head fs-5 text-white">Daily Products</h5>
+                                                <h2 class="card-head fs-3 text-white">3,456</h2>
+                                                <div class="text-muted">
+                                                    <i class="fas text-success fa-signal"></i>
+                                                    <span class="fw-bold">6.05%</span>
+                                                    <span>(30 days)</span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="icons info"><i class="far fa-chart-bar"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-sub-head fs-5 text-white">Daily Revenue</h5>
+                                                <h2 class="card-head fs-3 text-white">$ 2,345</h2>
+                                                <div class="text-muted">
+                                                    <i class="fas text-success fa-signal"></i>
+                                                    <span class="fw-bold">7.05%</span>
+                                                    <span>(30 days)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-sub-head fs-5 text-white">Daily Revenue</h5>
+                                                <h2 class="card-head fs-3 text-white">$ 2,345</h2>
+                                                <div class="text-muted">
+                                                    <i class="fas text-success fa-signal"></i>
+                                                    <span class="fw-bold">7.05%</span>
+                                                    <span>(30 days)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="chart">
+                                <div class="card">
+                                    <div class="card-title">
+                                        Revenue
+                                    </div>
+                                    <div class="card-body">
+                                        <canvas id="myChart" class="w-100"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                        <!-- Table Section -->
+                        <div class="col-12 mb-2 ps-0">
+                            <div class="card p-0">
+                                <div class="card-title">
+                                    Product Table
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table product-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>SrNo.</th>
+                                                    <th>Product Name</th>
+                                                    <th>Category</th>
+                                                    <th>Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>01</td>
+                                                    <td>Samsung Smartwatch</td>
+                                                    <td>Watch</td>
+                                                    <td><i class="far fa-rupee-sign"></i> 700</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>02</td>
+                                                    <td>Black HeadPhones</td>
+                                                    <td>Electronics</td>
+                                                    <td><i class="far fa-rupee-sign"></i> 1200</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>03</td>
+                                                    <td>Printed Shirts</td>
+                                                    <td>Clothes</td>
+                                                    <td><i class="far fa-rupee-sign"></i> 800</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>04</td>
+                                                    <td>Printed Bag</td>
+                                                    <td>Bags</td>
+                                                    <td><i class="far fa-rupee-sign"></i> 1000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>05</td>
+                                                    <td>Washing Machine</td>
+                                                    <td>Electronics</td>
+                                                    <td><i class="far fa-rupee-sign"></i> 5000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>06</td>
+                                                    <td>Laptop</td>
+                                                    <td>Electronics</td>
+                                                    <td><i class="far fa-rupee-sign"></i> 4000</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="row"> -->
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="card">
+                                <div class="card-title">
+                                    Map
+                                </div>
+                                <div class="card-body">
+                                    <div class="map">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241316.6433226075!2d72.74109764718445!3d19.082522324027448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1679406111247!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="card customers">
+                                <div class="card-title">
+                                    Customers
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="row my-1">
+                                                <div class="col-2">
+                                                    <div class="img-c">
+                                                        <img src="/img1.24fbe8dd.jpeg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h5>Rajkumar Prajapati</h5>
+                                                    <h6><a href="#">raj19@gmail.com</a></h6>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="text-end">
+                                                        <span class="btn btn-sm btn-danger">+4568</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row my-1">
+                                                <div class="col-2">
+                                                    <div class="img-c">
+                                                        <img src="/img2.99d8f221.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h5>Rohit Prajapati</h5>
+                                                    <h6><a href="#">roh08@gmail.com</a></h6>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="text-end">
+                                                        <span class="btn btn-sm btn-success">+458</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row my-1">
+                                                <div class="col-2">
+                                                    <div class="img-c">
+                                                        <img src="/img3.86fe251c.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h5>Rashid Khan</h5>
+                                                    <h6><a href="#">rashid12@gmail.com</a></h6>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="text-end">
+                                                        <span class="btn btn-sm btn-warning">+456</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row my-1">
+                                                <div class="col-2">
+                                                    <div class="img-c">
+                                                        <img src="/img4.725220e3.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h5>Utkarsha Navgire</h5>
+                                                    <h6><a href="#">uttu16@gmail.com</a></h6>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="text-end">
+                                                        <span class="btn btn-sm btn-secondary">+568</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-2">
+                                                    <div class="img-c">
+                                                        <img src="/img3.86fe251c.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <h5>Ashish Gupta</h5>
+                                                    <h6><a href="#">raj19@gmail.com</a></h6>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="text-end">
+                                                        <span class="btn btn-sm btn-info">+4568</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-title">
+                                    Videos
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                            <div class="card">
+                                                <div class="video-card">
+                                                    <a href="https://www.youtube.com/watch?v=IWObVLUFyTc" class="card video-popup">
+                                                        <img src="/thumnail1.3b0b3085.jpg" alt="Video1">
+                                                        <div class="img-div">
+                                                            <img src="/play-button.50eacc8d.png" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- <iframe src="https://www.youtube.com/embed/IWObVLUFyTc"
+                                                    title="YouTube video player" frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                    allowfullscreen></iframe> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                            <div class="card">
+                                                <div class="video-card">
+                                                    <a href="https://www.youtube.com/watch?v=DNMAbBMyl0o" class="video-popup"><img src="/thumnail2.0fdd4165.jpg" alt="Video2">
+                                                        <div class="img-div">
+                                                            <img src="/play-button.50eacc8d.png" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- <iframe src="https://www.youtube.com/embed/4tGSNaVw1hQ"
+                                                    title="YouTube video player" frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                    allowfullscreen></iframe> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                            <div class="card">
+                                                <div class="video-card">
+                                                    <a href="https://www.youtube.com/watch?v=4tGSNaVw1hQ" class="video-popup"><img src="/thumnail3.ccaf443d.jpg" alt="Video2">
+                                                        <div class="img-div">
+                                                            <img src="/play-button.50eacc8d.png" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- <iframe src="https://www.youtube.com/embed/DNMAbBMyl0o"
+                                                    title="YouTube video player" frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                    allowfullscreen></iframe> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p>Copyright © 2023 <a href="#">Manisha</a>. Designend By <a href="#">Manisha</a> | All rights reserved.
+                </p>
+            </footer>
+        </div>
+
+    </div>
+
+    <!-- Back To Bottom Button -->
+    <button id="button" class="btn btn-primary"><i class="far fa-chevron-up"></i></button>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+    <!-- Popup Video -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+
+    <!-- Chart JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <!-- Scripts -->
+    <script src="/js.00a46daa.js"></script>
+
+    <script>// Chart 1
+
+var xValues = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      label: 'Revenue',
+      borderRadius: 50,
+      data: [900, 1540, 400, 100, 1070, 1110, 1330, 2210, 7830, 2478],
+      borderColor: "#fcb314",
+      pointRadius: 0,
+      fill: false
+    }, {
+      label: 'Sales',
+      borderRadius: 50,
+      data: [1600, 1700, 1700, 3500, 2000, 2700, 4000, 5000, 6000, 7000],
+      borderColor: "rgb(5, 114, 5)",
+      pointRadius: 0,
+      fill: false
+    }, {
+      label: 'Users',
+      borderRadius: 50,
+      data: [700, 400, 1000, 5000, 6000, 4000, 2000, 1000, 200, 2000],
+      borderColor: "#063e93",
+      pointRadius: 0,
+      fill: false
+    }]
+  },
+  // options: {
+  //     legend: { display: false },
+  // },
+  options: {
+    plugins: {
+      legend: {
+        display: true,
+        labels: {
+          color: '#f6faff'
+        }
+      }
+    }
+  }
+});</script>
+</body>
+
+</html>

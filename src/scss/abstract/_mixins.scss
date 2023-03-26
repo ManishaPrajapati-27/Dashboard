@@ -1,0 +1,62 @@
+@use './variables' as v;
+
+@mixin card-style{
+    background: v.$dark;
+    border: 1px solid v.$dark-alt;
+    // padding: v.$value1;
+    box-shadow: v.$shadow1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+@mixin d-flex($align, $justify, $wrap){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+
+@mixin text($text){
+    text-align: $text;
+}
+
+@mixin card-title{
+    font-size: v.$fs-4;
+    border-bottom: 1px solid #1c1f25;
+    padding: v.$value1+5;
+    font-weight: 500;
+    font-family: v.$sans-serif-alt;
+    color: v.$white;
+}
+
+@mixin dropdown{
+    display: inline-block;
+    position: relative;
+}
+
+@mixin dd-button{
+    display: inline-block;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+@mixin button{
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    background: none;
+    padding: 8px 18px;
+    color: v.$light;
+}
+
+@mixin tableborder{
+    border: 1px solid #1c1f25;
+}
+
+@mixin icons{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+}

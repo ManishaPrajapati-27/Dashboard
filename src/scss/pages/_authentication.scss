@@ -1,0 +1,69 @@
+@use '../abstract/variables' as v;
+@use '../abstract/mixins' as m;
+
+.login-form{
+    @include m.d-flex(center, center, none);
+    min-width: 100%;
+    min-height: 100vh;
+
+    .login{
+        width: 400px;
+        margin: auto;
+
+        h2{
+            font-weight: 500;
+            font-size: v.$fs-4;
+        }
+
+        .navbar-brand {
+            a{
+                @include m.d-flex(center, center, none);
+
+                img{
+                    width: 50px;
+                }
+
+                span{
+                    font-size: 24px;
+                    margin-left: 10px;
+                    color: v.$white;
+                }
+            }
+        }
+
+        .fp{
+            transform: 0.8s all ease;
+
+            &:hover{
+                text-decoration: underline
+            }
+        }
+
+        .icons a{
+            @include m.icons;
+        }
+    }
+}
+
+.form-input-group{
+    @include m.d-flex(center, center, nowrap);
+
+    span{
+        width: 35px;
+        // border: 1px solid v.$secondary;
+        text-align: center; 
+        border: 1px solid v.$secondary;
+        border-radius: 4px 0 0 4px;
+        padding: 8px 0;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.5;
+        color: v.$white;
+        background-color: v.$dark-alt;
+    }
+    input{
+        width: calc(100% - 35px);
+        border: 1px solid v.$secondary;
+        border-radius: 0 4px 4px 0;
+    }
+}

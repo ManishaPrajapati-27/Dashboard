@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Noto+Sans+Lao:wght@100;200;300;400;500;600;700;800;900&display=swap');
+// Colors
+$primary : #063e93;
+$primary-alt : #183561;
+$secondary : rgb(57, 57, 57);
+$secondary-alt : rgb(153, 153, 153);
+$success : rgb(5, 114, 5);
+$success-alt : rgb(167, 246, 167);
+$warning : #fcb314;
+$info : #adceff;
+$danger : rgb(135, 6, 6);
+$danger-alt : rgb(248, 167, 167);
+// $dark : #010c1b;
+$dark : #000c1c;
+$dark-alt : #25272bd4;
+$light : #f6faff;
+$white : #ffffff;
+
+
+// Fonts
+$fs-1 : 38px;
+$fs-2 : 32px;
+$fs-3 : 28px;
+$fs-4 : 22px;
+$fs-5 : 18px;
+$fs-6 : 16px;
+$fs-7 : 14px;
+
+$value1 : 10px;
+$value2 : 20px;
+$value3 : 30px;
+$value4 : 40px;
+$value5 : 50px;
+$value6 : 60px;
+$value7 : 70px;
+$value8 : 80px;
+$value9 : 90px;
+$value10 : 100px;
+
+// Break-Points
+
+// $xs-breakpoint: 0;
+$sm-breakpoint:576px;
+$md-breakpoint:768px;
+$lg-breakpoint:992px;
+$xl-breakpoint:1200px;
+
+$shadow1 : 0px 0px 15px 1px #2c2e31cb;
+$shadow2 : 0px 0px 10px 1px #778090cb;
+$shadow3 : 0px 10px 10px 1px #778090cb;
+
+$sans-serif : 'Alata', sans-serif;
+$sans-serif-alt : 'Noto Sans Lao', sans-serif;

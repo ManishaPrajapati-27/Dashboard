@@ -1,0 +1,244 @@
+@use '../abstract/variables' as v;
+@use '../abstract/mixins' as m;
+
+.btn{
+    display: inline-block;
+    padding: 8px 20px;
+    border: 6px;
+    border-radius: 6px;
+    color: v.$white;
+    font-size: 16px;
+    transition: 0.4s all ease;
+    cursor: pointer;
+}
+
+.btn-square{
+    border-radius: 0;
+}
+
+.btn-rounded{
+    border-radius: 20px;
+}
+
+.btn-sm{
+    padding: 4px 10px;
+    font-size: 12px;
+}
+
+.btn-lg{
+    padding: 15px 25px;
+    font-size: 18px;
+}
+
+.btn-primary{
+border: 2px solid v.$primary;
+background: v.$primary;
+
+&:hover{
+    border: 2px solid #042c68;
+    background: #042c68;
+    transition: 0.4s all ease;
+}
+}
+
+.btn-success{
+border: 2px solid v.$success;
+background: v.$success;
+transition: 0.4s all ease;
+
+&:hover{
+    border: 2px solid rgb(4, 87, 4);
+    background: rgb(4, 87, 4);
+}
+}
+
+.btn-warning{
+border: 2px solid v.$warning;
+background: v.$warning;
+transition: 0.4s all ease;
+
+&:hover{
+    border: 2px solid #f0a607;
+    background: #f0a607;
+}
+}
+
+.btn-info{
+border: 2px solid v.$info;
+background: v.$info;
+transition: 0.4s all ease;
+
+&:hover{
+    border: 2px solid #9cc4ff;
+    background: #9cc4ff;
+}
+}
+
+.btn-secondary{
+border: 2px solid v.$secondary;
+background: v.$secondary;
+transition: 0.4s all ease;
+
+&:hover{
+    border: 2px solid rgb(37, 37, 37);
+    background: rgb(37, 37, 37);
+}
+}
+
+.btn-danger{
+border: 2px solid v.$danger;
+background: v.$danger;
+transition: 0.4s all ease;
+
+&:hover{
+    border: 2px solid rgb(88, 3, 3);
+    background: rgb(88, 3, 3);
+}
+}
+
+.btn-primary-outline{
+    border: 2px solid v.$primary;
+    background: transparent;
+    color: v.$primary;
+    
+&:hover{
+    border: 2px solid v.$primary;
+    background: v.$primary;
+    color: v.$white;
+    transition: 0.4s all ease;
+}
+
+}
+    
+.btn-success-outline{
+    border: 2px solid v.$success;
+    background: transparent;
+    color: v.$success;
+
+&:hover{
+    border: 2px solid v.$success;
+    background: v.$success;
+    color: v.$white;
+    transition: 0.4s all ease;
+}
+}
+
+.btn-warning-outline{
+    border: 2px solid v.$warning;
+    background: transparent;
+    color: v.$warning;
+
+&:hover{
+    border: 2px solid v.$warning;
+    background: v.$warning;
+    color: v.$white;
+    transition: 0.4s all ease;
+}
+}
+
+.btn-secondary-outline{
+    border: 2px solid v.$secondary;
+    background: transparent;
+    color: v.$secondary;
+
+&:hover{
+    border: 2px solid v.$secondary;
+    background: v.$secondary;
+    color: v.$white;
+    transition: 0.4s all ease;
+}
+}
+
+.btn-danger-outline{
+    border: 2px solid v.$danger;
+    background: transparent;
+    color: v.$danger;
+
+&:hover{
+    border: 2px solid v.$danger;
+    background: v.$danger;
+    color: v.$white;
+    transition: 0.4s all ease;
+}
+}
+
+.btn-info-outline{
+    border: 2px solid v.$info;
+    background: transparent;
+    color: v.$info;
+
+&:hover{
+    border: 2px solid v.$info;
+    background: v.$info;
+    color: v.$white;
+    transition: 0.4s all ease;
+}
+}
+
+#button{
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0;
+    text-align: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100;
+}
+
+#button:hover {
+    border: 2px solid v.$primary;
+    background: #063e938a;
+    // color: v.$primary;
+  }
+//   #button:active {
+//     background-color: #555;
+//   }
+
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+    
+
+.toggle{
+    display: inline-block;
+    background: none;
+    border: 0;
+    width: v.$value2 + 5px;
+    cursor: pointer;
+    
+
+    @media (min-width: v.$lg-breakpoint) {
+        margin-left: 250px;
+    }
+}
+
+.buttons{
+    @include m.button;
+}
+
+.nav-toggle{
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+
+    @media (max-width: v.$lg-breakpoint) {
+        display: inline-block;
+    }
+}
+
+@media (min-width: v.$lg-breakpoint){
+    .dashboard{
+        &.sidebar-toggle{
+            .db-nav{
+                .toggle{
+                    margin-left: 80px;
+                }
+            }
+        }
+    }
+}
