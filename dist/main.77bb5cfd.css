@@ -2578,6 +2578,13 @@ img, video {
   background: #1c1f25;
 }
 
+.product-table tbody tr td:nth-child(4) {
+  display: flex;
+  align-items: center;
+  justify-content: none;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
 .product-table tbody tr:nth-child(1) td:nth-child(3) {
   color: #063e93;
 }

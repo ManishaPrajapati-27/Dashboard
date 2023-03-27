@@ -71,6 +71,15 @@
 
 
 .product-table{
+
+    tbody{
+        tr{
+            td:nth-child(4){
+                @include m.d-flex(center, none, nowrap);
+                gap: 8px;
+            }
+        }
+    }
     $colors : v.$primary v.$success v.$danger v.$info v.$warning v.$danger-alt;
     
     @for $i from 1 through 6{
